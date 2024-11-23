@@ -1,1 +1,101 @@
-hello 
+<!--
+Téma ötlet:
+1. tegyük képeket a szekciókba, hogy mennyi helyet tölt ki
+- háttér elemek repeat-ben, és/vagy foltok: legyen min kiemelődjön a blur
+- szövegdobozok lekerekítve, blur
+-->
+<!doctype html>
+<html lang=hu>
+    <head>
+        <title>Kiss Loránd</title>
+        <meta charset="UTF-8">
+        <meta name=viewport content="width=device-width,initial-scale=1">
+        <meta name="description" content="Website of Lorand Kiss">
+        <meta name="keywords" content="CV, web developer">
+        <meta name="author" content="Lorand Kiss">
+        <!--<link href="/assets/main.css" rel="stylesheet">-->
+        <!--<script src="scripts/main.js">-->
+        <script type="module" src="http://localhost:5169/@vite/client"></script>
+        <script type="module" src="http://localhost:5169/resources/app.scss"></script>
+        <script type="module" src="http://localhost:5169/resources/app.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="bg-img">
+            </div>
+            <div class="hero-floating">
+                <div class="container">
+                    <img id="profile" src="assets/images/profile.jpg" width="200" height="300" alt="profile">
+                    <div class="header-text-container">
+                    <div class="title-container">
+                        <h1>Kiss Loránd</h1>
+                        <hr>
+                        <h2>webfejlesztő</h2>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+        <section class="chapter">
+            <div class="container">
+                <p id="about_text">Hivatásos és lelkes fullstack webfejlesztő vagyok 2019 óta. Szeretem a szakmám, 
+                mert kreatív lehetek, miközben problémákat oldok meg; emellett viszont folyamatos önfejlesztést és
+                naprakész tudást is igényel, amit rövidtávú célkitűzésekkel és szakmai hírfolyamok követésével oldok meg.
+                Számos projektjeim során elmélyült tudást szereztem PHP és Javascript nyelvvel, valamint MySQL-el.
+                </p>
+                <div class="bg-decor-code">
+                </div>
+            </div>
+        </section>
+        <section class="chapter lighter">
+            <div class="container">
+                <h2>Egyetemi évek</h2>
+                <div class="section-content">
+                    <p>2009-től a Szegedi Tudományegyetemen kezdtem meg tanulmányaimat mérnök informatikus Bsc szakon, ahová a játékfejlesztés és programozás iránti érdeklődésem irányított. A szórakozás és alkalmi munkák mellett hagytam időt tanulásra is, végül megszereztem a diplomámat.
+                    </p>
+                    <p>A szakdolgozatom témája egy FPS játék készítése volt, amit Unity3D segítségével készítettem és C# nyelven programoztam. Később publikálva egy ideig letölthetővé vált a Unity Assets Store-ban és kerestem is vele; erre fiatal egyetemistaként igazán büszke voltam.
+                    </p>
+                    <p>A Unity3D-ben szerzett rutinom miatt az egyetemen keresztül kerestek meg egy állásajánlattal, amit el is fogadtam. A feladatom a DL-Weld Trainer nevű egyedi hegesztőszimulátor további fejlesztése volt, amit tanulók betanítására és a szimuláció során végzett munkájuk elemzésére szolgált. Élveztem az új kihívásokat a projektben; a munka 2014 és 2015 között zajlott.
+                    </p>
+                    <div></div>
+                </div>
+            </div>
+        </section>
+        <section class="chapter">
+            <div class="container">
+                <h2>Falcosun Kft.</h2>
+                <p>2016-2017 között játékfejlesztőként dolgoztam egy tapasztaltabb kolléga mellett, ezidő alatt három játékot adtunk ki iOS, iPad és macOS platformokra: Swarm Breaker, Swarm Fortress és Cell Fortress néven. Xcode IDE-t használtunk és objective-c nyelvet, valamint git verziókezelő rendszert.
+                </p>
+            </div>
+        </section>
+        <section class="chapter lighter">
+            <div class="container">
+                <h2>Hungarosun Bt.</h2>
+                <p>A cégcsoporton belül maradva, 2018-ban egy napelempark tervező asztali alkalmazáson dolgoztam, hogy segítsem a tervezők munkáját. Java nyelven programoztam Eclipse IDE-t használva. Az alkalmazással felépíthető volt egy teljes napelem park méretarányosan, kiszámolva a megrendeléshez szükséges anyagmennyiséget, mint például a kábelek hosszát. Ugyanebben az évben már belekóstoltam egy Drupál oldal fejlesztésébe is.
+                </p>
+                <p>2019-től átvettem a cég webes vállalatirányítási rendszerének fejlesztését, kezdetben javítását, majd bővítését.
+                    Ebben az időszakban köteleződtem el a webfejlesztés mellett. Egyedüli fejlesztőként is sikerült beletanulnom a PHP és Javascript nyelvbe, mert ekkorra már volt elegendő programozói tapasztalatom.
+                </p>
+            </div>
+        </section>
+        <div class="chapter">
+            <div class="container">
+            <h2>2021-</h2>
+            <p>A PCTrade Kft. webes csapatát erősítem, ahol profi szoftverekkel dolgozunk, hatékony SDLC folyamatokkal összehangolva a munkát, de mégis közvetlen légkört fenntartva. A szakmában itt számottevő tapasztalatokat szereztem és törekszem folyamatosan szélesíteni a perspektívámat.
+            </p>
+            </div>
+        </div>
+        <footer>
+            Készült 2024-ben Kiss Loránd által. Kapcsolat: lorand.kiss.dev@gmail.com
+        </footer>
+    </body>
+</html>
+<!--
+footer - kapcsolat: email
+------------
+(?) Érdeklődési körök
+(?) skills: ezekről lehetne néhány gondolat
+git, docker, mysql, php, javascript, jquery, css, scss, laravel, wordpress, html
+
+-->

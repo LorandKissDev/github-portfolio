@@ -1,0 +1,30 @@
+/* blueimp gallery modifications */
+#blueimp-gallery.blueimp-gallery{
+  & > .indicator > li{
+    background-size: cover;
+  }
+  & > .slides> .slide-loading > .slide-content{
+    opacity: 1;
+  }
+  @media (min-width: $md_min){
+    .play-pause{
+      display: none;
+    }
+    > .indicator{
+      height: 110px;
+      width: calc(100vw - 105px);
+      overflow: auto;
+      white-space: nowrap;
+      
+      & > li{
+        width: 80px;
+        height: 80px;
+        opacity: 1;
+  
+        &:after{
+          display: none;
+        }
+      }
+    }
+  }
+}

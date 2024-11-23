@@ -1,0 +1,133 @@
+@font-face{
+    font-family: bodoni;
+    src: url('assets/fonts/BodoniFLF-Bold.woff2');
+}
+
+:root{
+    --broder_color: #c1c1c1;
+    --gray-light: #303030;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+p{
+    color: rgb(207, 207, 207);
+    line-height: 1.7rem;
+
+}
+.container{
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: 1440px){
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+h1{
+    font-size: 4.5rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+.header{
+    position: relative;
+
+    .bg-img{
+        background-image: url('assets/images/hero.png');
+        height: 60vh;
+        background-color: #636363;
+        background-blend-mode: multiply;
+        position: relative;
+        background-attachment: fixed;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -o-background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        filter: blur(2px);
+    }
+    .hero-floating{
+        position: absolute;
+        width: 100%;
+        top: 30vh;
+
+        & > .container{
+            display: flex;
+            justify-content: space-between;
+
+            #profile{
+                width: auto;
+                height: 35vh;
+                border-radius: 3px;
+                border: 6px double var(--broder_color);
+            }
+            .header-text-container{
+        
+                .title-container{
+                    width: fit-content;
+                    float: right;
+                    font-family: bodoni;
+                    text-shadow: 0px 0px 6px black;
+        
+                    h1{
+                        text-transform: uppercase;
+                    }
+                    h2{
+                        font-size: 2.5rem;
+                    }
+                    h1,h2{
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+                        text-align: end;
+                    }
+                }
+            }
+        }
+    }
+}
+.chapter{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    position: relative;
+
+    &.lighter{
+        background-color: var(--gray-light);
+    }
+    .container h2{
+        margin-top: 0;
+    }
+    .bg-decor-code{
+        background-image: url('/assets/images/code3.png');
+        position: absolute;
+        z-index: -1;
+        top: -4rem;
+        right: 0px;
+        width: 600px;
+        height: 100%;
+        opacity: 0.5;
+        background-repeat: no-repeat;
+        opacity: linear-gradient();
+        -webkit-mask-image: linear-gradient(194deg, rgb(0 0 0) 0%, rgb(0 0 0 / 7%) 31%, rgba(0, 0, 0, 0) 100%);
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: left top, left bottom;
+    }
+    .section-content{
+        margin-left: 50px;
+    }
+}
+#about_text{
+    border-left: 2px solid var(--broder_color);
+    padding: 2rem;
+    background-color: var(--gray-light);
+    width: 50%;
+    margin-right: 0;
+    margin-left: auto;
+    border-radius: 3px;
+}
