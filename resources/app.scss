@@ -5,7 +5,30 @@
 
 :root{
     --broder_color: #c1c1c1;
-    --gray-light: #303030;
+    --gray-light: #232323;
+}
+::selection,
+::-webkit-selection {
+    color: white;
+    background: rgb(20, 82, 43);
+}
+::-moz-selection{
+    color: white;
+    background: rgb(20, 82, 43);
+}
+
+/* scrollbar track */
+::-webkit-scrollbar{
+    background-color: #424742;
+}
+/*::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #383f38; 
+}*/
+::-webkit-scrollbar-thumb {
+    background: #202f26; 
+}  
+::-webkit-scrollbar-thumb:hover {
+    background: #202c25; 
 }
 
 body{
@@ -20,10 +43,24 @@ p{
     line-height: 1.7rem;
 
 }
+.text-with-image-block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img{
+        object-fit: cover;
+        border-radius: 6px;
+        border: 6px double #454545;
+        box-shadow: 4px 4px 8px 8px #00000021;
+    }
+}
 .container{
     max-width: 1150px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    z-index: 2;
     @media screen and (max-width: 1440px){
         margin-left: 10%;
         margin-right: 10%;
@@ -34,7 +71,38 @@ h1{
 }
 h2{
     font-size: 2.5rem;
+    color: rgb(207, 207, 207);
 }
+.bg-img{
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+    height: auto;
+    background-repeat: no-repeat;
+}
+section{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    position: relative;
+
+    &.lighter{
+        background-color: var(--gray-light);
+        box-shadow: inset 0 0 10px 0px #1a1a1a;
+    }
+    .container h2{
+        margin-top: 0;
+        letter-spacing: 2px;
+    }
+}
+.floating-text{
+    border-left: 2px solid var(--broder_color);
+    padding: 2rem;
+    background-color: #53535329;
+    width: 50%;
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+}
+/* --------- header --------- */
 .header{
     position: relative;
 
@@ -92,42 +160,114 @@ h2{
         }
     }
 }
-.chapter{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    position: relative;
-
-    &.lighter{
-        background-color: var(--gray-light);
+/* ---------- about ---------- */
+section#about{
+    .floating-text{
+        margin-left: auto;
+        margin-right: 0;
     }
-    .container h2{
-        margin-top: 0;
+    .bg-img-right{
+        bottom: 0;
+        right: 0;
+        width: 400px;
+        opacity: 0.04;
+        transform: rotate(180deg);
     }
-    .bg-decor-code{
-        background-image: url('/assets/images/code3.png');
-        position: absolute;
-        z-index: -1;
-        top: -4rem;
-        right: 0px;
-        width: 600px;
-        height: 100%;
-        opacity: 0.5;
-        background-repeat: no-repeat;
-        opacity: linear-gradient();
-        -webkit-mask-image: linear-gradient(194deg, rgb(0 0 0) 0%, rgb(0 0 0 / 7%) 31%, rgba(0, 0, 0, 0) 100%);
-        -webkit-mask-repeat: no-repeat;
-        -webkit-mask-position: left top, left bottom;
-    }
-    .section-content{
-        margin-left: 50px;
+    .bg-img-left{
+        bottom: 0;
+        left: 0;
+        width: 300px;
+        opacity: 0.04;
     }
 }
-#about_text{
-    border-left: 2px solid var(--broder_color);
-    padding: 2rem;
-    background-color: var(--gray-light);
-    width: 50%;
-    margin-right: 0;
-    margin-left: auto;
-    border-radius: 3px;
+/* ---------- university ---------- */
+section#university{
+    .bg-img-left{
+        top: 0;
+        left: 10%;
+        width: 700px;
+        height: auto;
+        opacity: 0.08;
+        transform: rotate(15deg);
+        transform-origin: top;
+    }
+    .bg-img-right{
+        bottom: 10px;
+        right: 50px;
+        width: 600px;
+        opacity: 0.08;
+        transform-origin: top;
+        mix-blend-mode: color-burn;
+    }
+}
+/* ---------- falcosun ---------- */
+section#falcosun{
+    .bg-img-top{
+        top: 0;
+        left: 0;
+        width: 200px;
+        opacity: 0.15;
+        filter: contrast(0.5);
+    }
+    .bg-img-bottom{
+        bottom: 37px;
+        left: 33%;
+        width: 448px;
+        opacity: 0.04;
+        opacity: 0.1;
+        filter: contrast(0.5);
+        transform: rotate(346deg);
+    }
+}
+
+/* ---------- falcosun ---------- */
+section#hungarosun{
+    .bg-img-left{
+        top: 13px;
+        left: 15px;
+        width: 186px;
+        opacity: 0.08;
+    }
+    .bg-img-right{
+        top: 0;
+        right: 10%;
+        width: 640px;
+        opacity: 0.08;
+    }
+}
+/* ---------- pctrade ---------- */
+section#pctrade{
+    .bg-img-left{
+        top: 3px;
+        left: 9px;
+        width: 186px;
+        opacity: 0.14;
+        filter: contrast(0.5);
+    }
+    .bg-img-bottom{
+        bottom: 0;
+        right: 2%;
+        width: 80%;
+        opacity: 0.08;
+        filter: contrast(0.5);
+        max-height: 500px;
+        max-width: fit-content;
+    }
+}
+/* ---------- footer ---------- */
+footer{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+    background-color: #0a0a0a;
+
+    .container{
+        display: flex;
+        align-items: space-between;
+
+        p{
+            color: #757575;
+            font-size: 16px;
+        }
+    }
 }
