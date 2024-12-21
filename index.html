@@ -1,9 +1,3 @@
-<!--
-Téma ötlet:
-1. tegyük képeket a szekciókba, hogy mennyi helyet tölt ki
-- háttér elemek repeat-ben, és/vagy foltok: legyen min kiemelődjön a blur
-- szövegdobozok lekerekítve, blur
--->
 <!doctype html>
 <html lang=hu>
     <head>
@@ -25,10 +19,10 @@ Téma ötlet:
             </div>
             <div class="hero-floating">
                 <div class="container">
-                    <img id="profile" src="assets/images/profile.jpg" width="200" height="300" alt="profile">
+                    <img id="profile" src="assets/images/profile.jpg" width="222" height="333" alt="profile">
                     <div class="header-text-container">
                         <div class="title-container">
-                            <h1>Kiss Loránd</h1>
+                            <h1>Loránd Kiss</h1>
                             <hr>
                             <h2>webfejlesztő</h2>
                         </div>
@@ -36,33 +30,92 @@ Téma ötlet:
                 </div>
             </div>
         </div>
-        <section id="about">
+        <section id="about" class="lighter">
             <div class="container">
-                <p class="floating-text">Hivatásos és lelkes fullstack webfejlesztő vagyok 2019 óta. Szeretem a szakmám, 
-                mert kreatív lehetek, miközben problémákat oldok meg; emellett viszont folyamatos önfejlesztést és
-                naprakész tudást is igényel, amit rövidtávú célkitűzésekkel és szakmai hírfolyamok követésével oldok meg.
-                Számos projektjeim során elmélyült tudást szereztem PHP és Javascript nyelvvel, valamint MySQL-el.
-                </p>
+                <div class="floating-text">
+                    <p>2019 óta dolgozom fullstack webfejlesztőként; elsősorban <b>PHP</b>, Javascript és SCSS nyelvekkel.
+                    Szeretem a változatos feladatokat és az azzal járó kihívások megoldását, legyen az akár a felhasználói élmény javítása és
+                    teljesítmény optimalizálás a frontenden, vagy egy üzleti logika, esetleg algoritmus kialakítása a backenden.
+                    A szakma elkerülhetetlen velejárója az életen át tartó tanulás, amit például rövidtávú célkitűzésekkel próbálok szem előtt tartani.
+                    Ebben a pillanatban, amikor ezt a mondatot írom, a célkitűzésem, hogy "elkészítem a saját weboldalam" :).</p>
+                    <p>Nem mindig voltam webfejlesztő, korábban más programozási nyelvekkel is dolgoztam. Mindenesetre nyitott vagyok az új technológiákra, 
+                    kellő motiváltsággal pedig bármit meg lehet tanulni.</p>
+                </div>
             </div>
             <img class="bg-img bg-img-left" src="assets/images/decor/circuit-bg-small.png" alt="" width="100" height="100">
             <img class="bg-img bg-img-right" src="assets/images/decor/circuit-bg.png" alt="" width="100" height="100">
+        </section>
+        <section id="pctrade">
+            <div class="container">
+                <h2>PCTrade Kft.</h2>
+                <p class="floating-text">2021-től a PCTrade Kft.-nél folytattam a pályám webfejlesztőként, immáron egy teljesjogú informatikai cégnél. 
+                    Hatványozottan több tapasztalatot és tudást sajátítottam el, mint korábban bárhol.
+                    Megismertem, hogy milyen a modern, agilis SDLC folyamat és az összehangolt csapatmunka. Számos projektben részt vettem, 
+                    közben elmélyítettem a tudásom a használt nyelvekkel. Emellett más eszközökkel tapasztalatot szerezni, például...
+                </p>
+                <div class="text-with-image-block">
+                    <ul class="floating-text">
+                        <li>Volt szerencsém Laravel keretrendszerrel dolgozni.</li>
+                        <li>Vite tool-al hatékonyan és gyorsan frontendet építeni.</li>
+                        <li>Dockerrel a production szerverhez hasonló környezetet kialakítani.</li>
+                        <li>Bitbuckettel automatizálni a deploy folyamatokat.</li>
+                        <li>Jiraval rendszerezni a feladatokat.</li>
+                        <li>Sonarlint-el ellenőrizni a kód minőségét.</li>
+                        <li>A fejlesztéshez minden igényt kielégítő Visual Studio Code-al és bővítményeivel dolgozni.</li>
+                    </ul>
+                    <img src="assets/images/pctrade/pctrade.jpg" alt="team" loading="lazy" width="400" height="300">
+                </div>
+            </div>
+            <img class="bg-img bg-img-left" src="assets/images/decor/pctrade.png" alt="" width="100" height="100">
+            <img class="bg-img bg-img-center" src="assets/images/decor/technology.png" alt="" width="100" height="100">
+        </section>
+        <section id="hungarosun" class="lighter">
+            <div class="container">
+                <h2>Hungarosun Bt.</h2>
+                <div class="text-with-image-block">
+                    <img src="assets/images/hungarosun/solar-panel.webp" alt="sonar panel" loading="lazy" width="400" height="300">
+                    <p class="floating-text">A cégcsoporton belül maradtam, de más területen próbáltam ki magam. 2018-ban egy napelempark tervező asztali alkalmazást fejlesztettem Java nyelven, hogy segítsem a cégnél dolgozó tervezők munkáját. Az alkalmazással felépíthető volt egy teljes napelem park méretarányosan, kiszámolva a megrendeléshez szükséges anyagmennyiséget, amit egy pdf-ben állított össze. Ugyanebben az évben már elkezdtem ismerkedni egy Drupál oldallal is.
+                    </p>
+                </div>
+                <p class="floating-text">2019-től megkaptam a cég webes vállalatirányítási rendszerének fejlesztését.
+                    PHP és Javascript nyelven készült, MySQL adatbázis kapcsolattal ellátva. Mivel akkor már nem volt mellettem kompetens fejlesztő,
+                    autodidaktva módon kellett a nyelveket, és magát a rendszert is megismernem. Kezdetben apró hibajavításokat és karbantartásokat eszközöltem, később nagyobb feladatokat kaptam, végül teljes aloldalakat fejlesztettem, illetve az első API-mat, amivel egy mobilalkalmazás kommunikált.
+                </p>
+            </div>
+            <img class="bg-img bg-img-left" src="assets/images/decor/hungarosun.png" alt="" width="100" height="100">
+            <img class="bg-img bg-img-right" src="assets/images/decor/solar-panel.png" alt="" width="100" height="100">
+        </section>
+        <section id="falcosun">
+            <div class="container">
+                <h2>Falcosun Kft.</h2>
+                <div class="text-with-image-block">
+                    <div class="floating-text">
+                        <p>2016-2017 között játékfejlesztőként dolgoztam egy tapasztaltabb munkatárs mellett, ezúttal Objective-C nyelven, 
+                        iOS, iPad és macOS platformokat célozva. Három játékot sikerült kiadnunk: Swarm Breaker, Swarm Fortress és Cell Fortress néven. Git verziókezelést alkalmaztunk.</p>
+                        <p>Habár a végeredménnyel elégedettek lehettünk, áttörő sikert nem tudtunk elérni a piacon.</p>
+                    </div>
+                    <img src="assets/images/falcosun/swarm_breaker.PNG" alt="Swarm Breaker game" loading="lazy" width="300" height="400">
+                </div>
+            </div>
+            <img class="bg-img bg-img-top" src="assets/images/decor/falcosun.png" alt="" width="100" height="100">
+            <img class="bg-img bg-img-center" src="assets/images/decor/xcode.png" alt="" width="100" height="100">
         </section>
         <section id="university" class="lighter">
             <div class="container">
                 <h2>Egyetem</h2>
                 <div class="section-content">
-                    <div>
-                        <p class="floating-text">2009-től a Szegedi Tudományegyetemen kezdtem meg tanulmányaimat mérnök informatikus Bsc szakon, ahová a játékfejlesztés és programozás iránti érdeklődésem irányított. A szórakozás és alkalmi munkák mellett hagytam időt tanulásra is, végül megszereztem a diplomámat.
-                        </p>
-                    </div>
+                    <p class="floating-text">2009-től a Szegedi Tudományegyetemen kezdtem meg tanulmányaimat mérnök informatikus Bsc szakon, ahová kezdetben a játékfejlesztés, a programozás és a robotika iránti érdeklődésem irányított. Az egyetem alatt különféle munkákat vállaltam. Végül megszereztem a diplomát.
+                    </p>
                     <div class="text-with-image-block">
-                        <p class="floating-text">A szakdolgozatom témája egy FPS játék készítése volt, amit Unity3D segítségével készítettem és C# nyelven programoztam. Később publikálva egy ideig letölthetővé vált a Unity Assets Store-ban és kerestem is vele; erre fiatal egyetemistaként igazán büszke voltam.
+                        <p class="floating-text">A szakdolgozatom témája egy FPS (First Person Shooter) játék készítése volt, amit Unity3D segítségével készítettem és C# nyelven programoztam. 6 pályán lehetett végighaladni, különböző ellenfeleket kiiktatva. Az elkészülte után egy ideig letölthetővé vált a Unity Assets Store-ban és kerestem is vele; erre fiatal egyetemistaként igazán büszke voltam. A legfontosabb tanulság az volt, hogy egyedüli fejlesztőként mennyire időigényes egy ekkora kaliberű projekt, és mindig becslést kell adni a munkára.
                         </p>
                         <img src="assets/images/unity-game/unity-game2.jpg" alt="Unity 3d game" loading="lazy" width="300" height="300">
                     </div>
                     <div class="text-with-image-block">
                         <img src="assets/images/dl-weld/0.png" alt="Weld trainer" loading="lazy" width="300" height="400">
-                        <p class="floating-text">A Unity3D-ben szerzett rutinom miatt az egyetemen keresztül kerestek meg egy állásajánlattal, amit el is fogadtam. A feladatom a DL-Weld Trainer nevű egyedi hegesztőszimulátor további fejlesztése volt, amit tanulók betanítására és a szimuláció során végzett munkájuk elemzésére szolgált. Élveztem az új kihívásokat a projektben; a munka 2014 és 2015 között zajlott.
+                        <p class="floating-text">A Unity3D-ben szerzett tapasztalataimnak köszönhetően az egyetemen keresztül kerestek meg egy állásajánlattal, amit örömmel el is fogadtam. A feladatom a DL-Weld Trainer nevű egyedi hegesztőszimulátor további fejlesztése volt, szintén C# nyelven, amit korábban más fejlesztők foltozgatak; és abban az időben rajtam volt a sor, amit az elfogadhatóan kész állapotig vittem.
+                        Az eszköz hardver részekből és szoftverből állt, célja hegesztő tanoncok betanítására és munkájuk kiértékelése volt. A munkadarabon és ál- hegesztőpisztolyon elhelyezett markerek pozícióját a sisakon elhelyezett nagysebességű kamera vette, és elhelyezte a modelljüket a virtuális térben.
+                        Izgalmas kihívás volt, a munka 2014 és 2015 között zajlott. Rendszeres konzultációt igényelt, ekkor használtam először verziókezelő rendszert, a Subversion-t (SVN).
                         </p>
                     </div>
                     <div></div>
@@ -70,45 +123,6 @@ Téma ötlet:
             </div>
             <img class="bg-img bg-img-left" src="assets/images/decor/graduation-hat.png" alt="" width="100" height="100">
             <img class="bg-img bg-img-right" src="assets/images/decor/unity.png" alt="" width="100" height="100">
-        </section>
-        <section id="falcosun">
-            <div class="container">
-                <h2>Falcosun Kft.</h2>
-                <div class="text-with-image-block">
-                    <p class="floating-text">2016-2017 között játékfejlesztőként dolgoztam egy tapasztaltabb kolléga mellett, ezidő alatt három játékot adtunk ki iOS, iPad és macOS platformokra: Swarm Breaker, Swarm Fortress és Cell Fortress néven. Xcode IDE-t használtunk és objective-c nyelvet, valamint git verziókezelő rendszert.
-                    </p>
-                    <img src="assets/images/falcosun/swarm_breaker.PNG" alt="Swarm Breaker game" loading="lazy" width="300" height="400">
-                </div>
-            </div>
-            <img class="bg-img bg-img-top" src="assets/images/decor/falcosun.png" alt="" width="100" height="100">
-            <img class="bg-img bg-img-bottom" src="assets/images/decor/xcode.png" alt="" width="100" height="100">
-        </section>
-        <section id="hungarosun" class="lighter">
-            <div class="container">
-                <h2>Hungarosun Bt.</h2>
-                <div class="text-with-image-block">
-                    <img src="assets/images/hungarosun/solar-panel.webp" alt="sonar panel" loading="lazy" width="400" height="300">
-                    <p class="floating-text">A cégcsoporton belül maradva, 2018-ban egy napelempark tervező asztali alkalmazáson dolgoztam, hogy segítsem a tervezők munkáját. Java nyelven programoztam Eclipse IDE-t használva. Az alkalmazással felépíthető volt egy teljes napelem park méretarányosan, kiszámolva a megrendeléshez szükséges anyagmennyiséget, mint például a kábelek hosszát. Ugyanebben az évben már belekóstoltam egy Drupál oldal fejlesztésébe is.
-                    </p>
-                </div>
-                <p class="floating-text">2019-től átvettem a cég webes vállalatirányítási rendszerének fejlesztését, kezdetben javítását, majd bővítését.
-                    Ebben az időszakban köteleződtem el a webfejlesztés mellett. Egyedüli fejlesztőként is sikerült beletanulnom a PHP és Javascript nyelvbe, mert ekkorra már volt elegendő programozói tapasztalatom.
-                </p>
-            </div>
-            <img class="bg-img bg-img-left" src="assets/images/decor/hungarosun.png" alt="" width="100" height="100">
-            <img class="bg-img bg-img-right" src="assets/images/decor/solar-panel.png" alt="" width="100" height="100">
-        </section>
-        <section id="pctrade">
-            <div class="container">
-                <h2>PCTrade Kft.</h2>
-                <div class="text-with-image-block">
-                    <p class="floating-text">2021-től a PCTrade Kft. webes csapatát erősítem, ahol profi szoftverekkel dolgozunk, hatékony SDLC folyamatokkal összehangolva a munkát, de mégis közvetlen légkört fenntartva. A szakmában itt számottevő tapasztalatokat szereztem és törekszem folyamatosan szélesíteni a perspektívámat.
-                    </p>
-                    <img src="assets/images/pctrade/pctrade.jpg" alt="team" loading="lazy" width="400" height="300">
-                </div>
-            </div>
-            <img class="bg-img bg-img-left" src="assets/images/decor/pctrade.png" alt="" width="100" height="100">
-            <img class="bg-img bg-img-bottom" src="assets/images/decor/technology.png" alt="" width="100" height="100">
         </section>
         <footer>
             <div class="container">
