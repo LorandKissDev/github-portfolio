@@ -29,15 +29,12 @@ export default ({ mode }) => {
             assetsDir: '',
             rollupOptions: {
                 input: {
-                    app: './resources/app.js',
-                    app_css: './resources/app.scss',
+                    app: './resources/js/app.js',
+                    app_css: './resources/scss/app.scss',
                 },
                 output: {
                     entryFileNames: `app.js`,
-                    assetFileNames: ({name}) => {                        
-                        /*if (/\.css$/.test(name ?? '')) {
-                            return 'css/[name].[ext]';   
-                        }*/
+                    assetFileNames: () => {
                         return '[name].[ext]';
                     },
                 },

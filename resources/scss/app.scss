@@ -1,4 +1,5 @@
-@import "variables";
+@use "variables" as *;
+@use "animations";
 
 /* --------- generic --------- */
 @font-face{
@@ -28,7 +29,10 @@
         background: #a8b3ad;
     }
 }
-
+html{
+    overflow-x: hidden;
+    max-width: 100%;
+}
 body{
     margin: 0;
     background-color: $body_color;
@@ -82,6 +86,9 @@ h2{
     font-size: 2.5rem;
     color: $h2_color;
 }
+a{
+    color: #50b776;
+}
 .bg-img{
     pointer-events: none;
     position: absolute;
@@ -119,6 +126,12 @@ section{
     }
     & > p:last-child{
         margin-bottom: 0;
+    }
+}
+@media screen and (max-width: $md_max){
+    img{
+        max-width: calc(100% - 12px);
+        max-height: fit-content;
     }
 }
 
@@ -289,10 +302,6 @@ section#pctrade{
         width: 800px;
         margin-bottom: 2rem;
     }
-    img{
-        max-width: calc(100% - 12px);
-        max-height: fit-content;
-    }
     @media screen and (max-width: $lg_max){
         .text-with-image-block{
             flex-direction: column;
@@ -333,12 +342,6 @@ section#hungarosun{
             margin-right: auto;
         }
     }
-    @media screen and (max-width: $md_max){
-        img{
-            max-width: calc(100% - 12px);
-            max-height: fit-content;
-        }
-    }
 }
 /* ---------- falcosun ---------- */
 section#falcosun{
@@ -364,11 +367,8 @@ section#falcosun{
         width: 315px;
         opacity: 0.11;
         filter: contrast(0.5);
-    }
-    @media screen and (max-width: $md_max){
-        img{
-            max-width: calc(100% - 12px);
-            max-height: fit-content;
+        @media screen and (max-width: $sm_max){
+            max-width: 70%;
         }
     }
 }
@@ -395,6 +395,7 @@ section#university{
         opacity: 0.14;
         transform: rotate(15deg);
         transform-origin: top;
+        max-width: 80%;
         @media screen and (min-width: $xxl_min){
             left: $abs_pos_left_min;
         }
