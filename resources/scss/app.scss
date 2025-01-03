@@ -4,7 +4,7 @@
 /* --------- generic --------- */
 @font-face{
     font-family: bodoni;
-    src: url('assets/fonts/BodoniFLF-Bold.woff2');
+    src: url('/assets/fonts/BodoniFLF-Bold.woff2');
 }
 
 ::selection,
@@ -140,7 +140,7 @@ section{
     position: relative;
 
     .bg-img{
-        background-image: url('assets/images/hero.png');
+        background-image: url('/assets/images/hero.webp');
         height: 550px;
         background-color: #636363;
         background-blend-mode: multiply;

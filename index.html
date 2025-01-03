@@ -7,11 +7,11 @@
         <meta name="description" content="Website of Lorand Kiss">
         <meta name="keywords" content="CV, web developer">
         <meta name="author" content="Lorand Kiss">
-        <!--<link href="/assets/main.css" rel="stylesheet">-->
-        <!--<script src="scripts/main.js">-->
-        <script type="module" src="http://localhost:5169/@vite/client"></script>
+        <link href="assets/bundles/app_css.css" rel="stylesheet">
+        <script src="assets/bundles/app.js" type="module"></script>
+        <!--<script type="module" src="http://localhost:5169/@vite/client"></script>
         <script type="module" src="http://localhost:5169/resources/scss/app.scss"></script>
-        <script type="module" src="http://localhost:5169/resources/js/app.js"></script>
+        <script type="module" src="http://localhost:5169/resources/js/app.js"></script>-->
     </head>
     <body>
         <div class="header">
@@ -19,7 +19,7 @@
             </div>
             <div class="hero-floating">
                 <div class="container">
-                    <img id="profile" src="assets/images/profile.jpg" width="222" height="333" alt="profile">
+                    <img id="profile" src="assets/images/profile.webp" width="222" height="333" alt="profile">
                     <div class="header-text-container">
                         <div class="title-container">
                             <h1>Loránd Kiss</h1>
@@ -42,8 +42,8 @@
                     kellő motiváltsággal pedig bármit meg lehet tanulni.</p>
                 </div>
             </div>
-            <img class="bg-img bg-img-left" src="assets/images/decor/circuit-bg-small.png" alt="" width="100" height="100">
-            <img class="bg-img bg-img-right" src="assets/images/decor/circuit-bg.png" alt="" width="100" height="100">
+            <img class="bg-img bg-img-left" src="assets/images/decor/circuit-bg-small.webp" alt="" width="100" height="100">
+            <img class="bg-img bg-img-right" src="assets/images/decor/circuit-bg.webp" alt="" width="100" height="100">
         </section>
         <section id="pctrade">
             <div class="container">
@@ -63,11 +63,11 @@
                         <li>Sonarlint-el ellenőrizni a kód minőségét.</li>
                         <li>A fejlesztéshez minden igényt kielégítő Visual Studio Code-al és bővítményeivel dolgozni.</li>
                     </ul>
-                    <img class="fadeInit fadeInRight" src="assets/images/pctrade/pctrade.jpg" alt="team" loading="lazy" width="400" height="300">
+                    <img class="fadeInit fadeInRight" src="assets/images/pctrade/pctrade.webp" alt="team" loading="lazy" width="400" height="300">
                 </div>
             </div>
-            <img class="bg-img bg-img-left" src="assets/images/decor/pctrade.png" alt="" width="100" height="100">
-            <img class="bg-img bg-img-center" src="assets/images/decor/technology.png" alt="" width="100" height="100">
+            <img class="bg-img bg-img-left" src="assets/images/decor/pctrade.webp" alt="" width="100" height="100">
+            <img class="bg-img bg-img-center" src="assets/images/decor/technology.webp" alt="" width="100" height="100">
         </section>
         <section id="hungarosun" class="lighter">
             <div class="container">
@@ -82,8 +82,8 @@
                     autodidaktva módon kellett a nyelveket, és magát a rendszert is megismernem. Kezdetben apró hibajavításokat és karbantartásokat eszközöltem, később nagyobb feladatokat kaptam, végül teljes aloldalakat fejlesztettem, illetve az első API-mat, amivel egy mobilalkalmazás kommunikált.
                 </p>
             </div>
-            <img class="bg-img bg-img-left" src="assets/images/decor/hungarosun.png" alt="" width="100" height="100">
-            <img class="bg-img bg-img-right" src="assets/images/decor/solar-panel.png" alt="" width="100" height="100">
+            <img class="bg-img bg-img-left" src="assets/images/decor/hungarosun.webp" alt="" width="100" height="100">
+            <img class="bg-img bg-img-right" src="assets/images/decor/solar-panel.webp" alt="" width="100" height="100">
         </section>
         <section id="falcosun">
             <div class="container">
@@ -94,11 +94,11 @@
                         iOS, iPad és macOS platformokat célozva. Három játékot sikerült kiadnunk: Swarm Breaker, Swarm Fortress és Cell Fortress néven. Git verziókezelést alkalmaztunk.</p>
                         <p>Habár a végeredménnyel elégedettek lehettünk, áttörő sikert nem tudtunk elérni a piacon.</p>
                     </div>
-                    <img class="fadeInit fadeInRight" src="assets/images/falcosun/swarm_breaker.PNG" alt="Swarm Breaker game" loading="lazy" width="300" height="400">
+                    <img class="fadeInit fadeInRight gallery" src="assets/images/falcosun/swarm_breaker.webp" alt="Swarm Breaker game" loading="lazy" width="300" height="400" data-folder="falcosun" data-filenames="swarm_breaker.webp,cell_fortress.webp">
                 </div>
             </div>
-            <img class="bg-img bg-img-top" src="assets/images/decor/falcosun.png" alt="" width="100" height="100">
-            <img class="bg-img bg-img-center" src="assets/images/decor/xcode.png" alt="" width="100" height="100">
+            <img class="bg-img bg-img-top" src="assets/images/decor/falcosun.webp" alt="" width="100" height="100">
+            <img class="bg-img bg-img-center" src="assets/images/decor/xcode.webp" alt="" width="100" height="100">
         </section>
         <section id="university" class="lighter">
             <div class="container">
@@ -109,10 +109,10 @@
                     <div class="text-with-image-block">
                         <p class="floating-text fadeInit fadeInLeft">A szakdolgozatom témája egy FPS (First Person Shooter) játék készítése volt, amit Unity3D segítségével készítettem és C# nyelven programoztam. 6 pályán lehetett végighaladni, különböző ellenfeleket kiiktatva. Az elkészülte után egy ideig letölthetővé vált a Unity Assets Store-ban és kerestem is vele; erre fiatal egyetemistaként igazán büszke voltam. A legfontosabb tanulság az volt, hogy egyedüli fejlesztőként mennyire időigényes egy ekkora kaliberű projekt, és mindig becslést kell adni a munkára.
                         </p>
-                        <img class="fadeInit fadeInRight" src="assets/images/unity-game/unity-game2.jpg" alt="Unity 3d game" loading="lazy" width="300" height="300">
+                        <img class="fadeInit fadeInRight gallery" src="assets/images/unity-game/unity-game2.webp" alt="Unity 3d game" loading="lazy" width="300" height="300" data-folder="unity-game" data-filenames="unity-game2.webp,unity-game1.webp">
                     </div>
                     <div class="text-with-image-block">
-                        <img class="fadeInit fadeInLeft" src="assets/images/dl-weld/0.png" alt="Weld trainer" loading="lazy" width="300" height="400">
+                        <img class="fadeInit fadeInLeft gallery" src="assets/images/dl-weld/0.webp" alt="Weld trainer" loading="lazy" width="300" height="400" data-folder="dl-weld" data-filenames="0.webp,1.webp,2.webp,4.webp">
                         <p class="floating-text fadeInit fadeInRight">A Unity3D-ben szerzett tapasztalataimnak köszönhetően az egyetemen keresztül kerestek meg egy állásajánlattal, amit örömmel el is fogadtam. A feladatom a DL-Weld Trainer nevű egyedi hegesztőszimulátor további fejlesztése volt, szintén C# nyelven, amit korábban más fejlesztők foltozgatak; és abban az időben rajtam volt a sor, amit az elfogadhatóan kész állapotig vittem.
                         Az eszköz hardver részekből és szoftverből állt, célja hegesztő tanoncok betanítására és munkájuk kiértékelése volt. A munkadarabon és ál- hegesztőpisztolyon elhelyezett markerek pozícióját a sisakon elhelyezett nagysebességű kamera vette, és elhelyezte a modelljüket a virtuális térben.
                         Izgalmas kihívás volt, a munka 2014 és 2015 között zajlott. Rendszeres konzultációt igényelt, ekkor használtam először verziókezelő rendszert, a Subversion-t (SVN).
@@ -121,9 +121,18 @@
                     <div></div>
                 </div>
             </div>
-            <img class="bg-img bg-img-left" src="assets/images/decor/graduation-hat.png" alt="" width="100" height="100">
-            <img class="bg-img bg-img-right" src="assets/images/decor/unity.png" alt="" width="100" height="100">
+            <img class="bg-img bg-img-left" src="assets/images/decor/graduation-hat.webp" alt="" width="100" height="100">
+            <img class="bg-img bg-img-right" src="assets/images/decor/unity.webp" alt="" width="100" height="100">
         </section>
+        <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" aria-label="image gallery" aria-modal="true">
+            <div class="slides" aria-live="polite"></div>
+            <a class="prev" aria-controls="blueimp-gallery" aria-label="previous slide" aria-keyshortcuts="ArrowLeft"></a>
+            <a class="next" aria-controls="blueimp-gallery" aria-label="next slide" aria-keyshortcuts="ArrowRight"></a>
+            <a class="close" aria-controls="blueimp-gallery" aria-label="close" aria-keyshortcuts="Escape"></a>
+            <button class="play-pause" aria-controls="blueimp-gallery" aria-label="play slideshow" aria-keyshortcuts="Space"
+                aria-pressed="false"></button>
+            <ol class="indicator desktop-big"></ol>
+        </div>
         <footer>
             <div class="container">
                 <p>Készült 2024-ben Kiss Loránd által.</p>

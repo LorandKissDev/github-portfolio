@@ -5,11 +5,11 @@ export class FadeAnimations{
     constructor()
     {
         this.objects = document.querySelectorAll('.fadeInit');
-        this.handle();
+        this.handleScroll();
     }
 
     /** */
-    handle()
+    handleScroll()
     {
         let is_removed = false;
 
