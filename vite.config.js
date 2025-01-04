@@ -5,7 +5,6 @@ import { resolve } from 'path';
 export default ({ mode }) => {
     return defineConfig({
         plugins: [
-            // register live reload plugin, for refreshing the browser on file changes
             liveReload([
                 __dirname + '/index.html',
             ]),

@@ -15,8 +15,12 @@
     </head>
     <body>
         <div class="header">
-            <div class="bg-img">
-            </div>
+            <picture>
+                <source media="(max-width:600px)" srcset="assets/images/hero_small.webp">
+                <source media="(min-width:601px)" srcset="assets/images/hero.webp">
+                <img src="assets/images/hero.webp" class="bg-img" width="222" height="333" alt="">
+            </picture> 
+            </img>
             <div class="hero-floating">
                 <div class="container">
                     <img id="profile" src="assets/images/profile.webp" width="222" height="333" alt="profile">
@@ -74,7 +78,7 @@
                 <h2>Hungarosun Bt.</h2>
                 <div class="text-with-image-block">
                     <img class="fadeInit fadeInLeft" src="assets/images/hungarosun/solar-panel.webp" alt="sonar panel" loading="lazy" width="400" height="300">
-                    <p class="floating-text">A cégcsoporton belül maradtam, de más területen próbáltam ki magam. 2018-ban egy napelempark tervező asztali alkalmazást fejlesztettem Java nyelven, hogy segítsem a cégnél dolgozó tervezők munkáját. Az alkalmazással felépíthető volt egy teljes napelem park méretarányosan, kiszámolva a megrendeléshez szükséges anyagmennyiséget, amit egy pdf-ben állított össze. Ugyanebben az évben már elkezdtem ismerkedni egy Drupál oldallal is.
+                    <p class="floating-text fadeInit fadeInRight">A cégcsoporton belül maradtam, de más területen próbáltam ki magam. 2018-ban egy napelempark tervező asztali alkalmazást fejlesztettem Java nyelven, hogy segítsem a cégnél dolgozó tervezők munkáját. Az alkalmazással felépíthető volt egy teljes napelem park méretarányosan, kiszámolva a megrendeléshez szükséges anyagmennyiséget, amit egy pdf-ben állított össze. Ugyanebben az évben már elkezdtem ismerkedni egy Drupál oldallal is.
                     </p>
                 </div>
                 <p class="floating-text fadeInit fadeInLeft">2019-től megkaptam a cég webes vállalatirányítási rendszerének fejlesztését.
@@ -94,7 +98,10 @@
                         iOS, iPad és macOS platformokat célozva. Három játékot sikerült kiadnunk: Swarm Breaker, Swarm Fortress és Cell Fortress néven. Git verziókezelést alkalmaztunk.</p>
                         <p>Habár a végeredménnyel elégedettek lehettünk, áttörő sikert nem tudtunk elérni a piacon.</p>
                     </div>
-                    <img class="fadeInit fadeInRight gallery" src="assets/images/falcosun/swarm_breaker.webp" alt="Swarm Breaker game" loading="lazy" width="300" height="400" data-folder="falcosun" data-filenames="swarm_breaker.webp,cell_fortress.webp">
+                    <div class="gallery-container fadeInit fadeInRight">
+                        <img class="gallery" src="assets/images/falcosun/swarm_breaker.webp" alt="Swarm Breaker game" loading="lazy" width="300" height="400" data-folder="falcosun" data-filenames="swarm_breaker.webp,cell_fortress.webp">
+                        <img class="icon" src="assets/images/decor/gallery-icon.webp" alt="" loading="lazy" width="50" height="50">
+                    </div>
                 </div>
             </div>
             <img class="bg-img bg-img-top" src="assets/images/decor/falcosun.webp" alt="" width="100" height="100">
@@ -109,10 +116,16 @@
                     <div class="text-with-image-block">
                         <p class="floating-text fadeInit fadeInLeft">A szakdolgozatom témája egy FPS (First Person Shooter) játék készítése volt, amit Unity3D segítségével készítettem és C# nyelven programoztam. 6 pályán lehetett végighaladni, különböző ellenfeleket kiiktatva. Az elkészülte után egy ideig letölthetővé vált a Unity Assets Store-ban és kerestem is vele; erre fiatal egyetemistaként igazán büszke voltam. A legfontosabb tanulság az volt, hogy egyedüli fejlesztőként mennyire időigényes egy ekkora kaliberű projekt, és mindig becslést kell adni a munkára.
                         </p>
-                        <img class="fadeInit fadeInRight gallery" src="assets/images/unity-game/unity-game2.webp" alt="Unity 3d game" loading="lazy" width="300" height="300" data-folder="unity-game" data-filenames="unity-game2.webp,unity-game1.webp">
+                        <div class="gallery-container fadeInit fadeInRight">
+                            <img class="fadeInit fadeInRight gallery" src="assets/images/unity-game/unity-game2.webp" alt="Unity 3d game" loading="lazy" width="300" height="300" data-folder="unity-game" data-filenames="unity-game2.webp,unity-game1.webp">
+                            <img class="icon" src="assets/images/decor/gallery-icon.webp" alt="" loading="lazy" width="50" height="50">
+                        </div>
                     </div>
                     <div class="text-with-image-block">
-                        <img class="fadeInit fadeInLeft gallery" src="assets/images/dl-weld/0.webp" alt="Weld trainer" loading="lazy" width="300" height="400" data-folder="dl-weld" data-filenames="0.webp,1.webp,2.webp,4.webp">
+                        <div class="gallery-container fadeInit fadeInRight">
+                            <img class="fadeInit fadeInLeft gallery" src="assets/images/dl-weld/0.webp" alt="Weld trainer" loading="lazy" width="300" height="400" data-folder="dl-weld" data-filenames="0.webp,1.webp,2.webp,4.webp">
+                            <img class="icon" src="assets/images/decor/gallery-icon.webp" alt="" loading="lazy" width="50" height="50">
+                        </div>
                         <p class="floating-text fadeInit fadeInRight">A Unity3D-ben szerzett tapasztalataimnak köszönhetően az egyetemen keresztül kerestek meg egy állásajánlattal, amit örömmel el is fogadtam. A feladatom a DL-Weld Trainer nevű egyedi hegesztőszimulátor további fejlesztése volt, szintén C# nyelven, amit korábban más fejlesztők foltozgatak; és abban az időben rajtam volt a sor, amit az elfogadhatóan kész állapotig vittem.
                         Az eszköz hardver részekből és szoftverből állt, célja hegesztő tanoncok betanítására és munkájuk kiértékelése volt. A munkadarabon és ál- hegesztőpisztolyon elhelyezett markerek pozícióját a sisakon elhelyezett nagysebességű kamera vette, és elhelyezte a modelljüket a virtuális térben.
                         Izgalmas kihívás volt, a munka 2014 és 2015 között zajlott. Rendszeres konzultációt igényelt, ekkor használtam először verziókezelő rendszert, a Subversion-t (SVN).

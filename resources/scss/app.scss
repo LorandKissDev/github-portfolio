@@ -57,7 +57,7 @@ ul{
     justify-content: space-between;
     gap: 2rem;
 
-    img{
+    img:not(.icon){
         object-fit: cover;
         border-radius: 6px;
         border: 6px double #454545;
@@ -88,6 +88,9 @@ h2{
 }
 a{
     color: #50b776;
+    &:hover{
+        color: #48e582;
+    }
 }
 .bg-img{
     pointer-events: none;
@@ -118,6 +121,13 @@ section{
     backdrop-filter: blur(5px);
     width: 575px;
     max-width: fit-content;
+    transition: all 0.2s ease-out;
+
+    &:hover{
+        border-color: $border-color-hover;
+        backdrop-filter: blur(15px);
+    }
+
     @media screen and (max-width: $xs_max){
         padding: 1rem;
     }
@@ -134,30 +144,50 @@ section{
         max-height: fit-content;
     }
 }
+.gallery-container{
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+    position: relative;
 
+    &:hover{
+        transform: scale(1.02);
+        .gallery{
+            border-color: $border-color-hover;
+        }
+        .icon{
+            filter: brightness(0.8);
+        }
+    }
+    .icon{
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        filter: brightness(0.5);
+        transition: all 0.2s ease-out;
+    }
+}
 /* --------- header --------- */
 .header{
     position: relative;
+    line-height: 0;
 
     .bg-img{
-        background-image: url('/assets/images/hero.webp');
         height: 550px;
-        background-color: #636363;
-        background-blend-mode: multiply;
+        width: 100%;
         position: relative;
-        background-attachment: fixed;
-        background-position: center top;
-        background-repeat: no-repeat;
-        background-size: cover;
+        object-fit: cover;
         -o-background-size: cover;
         -webkit-background-size: cover;
         -moz-background-size: cover;
-        filter: blur(2px);
+        filter: blur(2px) brightness(0.5);
+        max-width: 100%;
+        max-height: inherit;
     }
     .hero-floating{
         position: absolute;
         width: 100%;
         top: 245px;
+        line-height: initial;
 
         & > .container{
             display: flex;
@@ -292,11 +322,10 @@ section#pctrade{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 80%;
+        width: 70%;
         opacity: 0.08;
         filter: contrast(0.5);
         max-height: 500px;
-        max-width: fit-content;
     }
     p.floating-text{
         width: 800px;
