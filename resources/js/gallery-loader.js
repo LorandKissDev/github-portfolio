@@ -1,12 +1,10 @@
-//import { isElementInViewport } from '@/js/is-element-in-viewport';
+import { isElementInViewport } from '@/js/is-element-in-viewport';
 
 export class GalleryLoader {
 
     constructor()
     {
-        //this.galleries_container = document.getElementById('galleries');
         this.inserted = false;
-        //this.galleries = ['falcosun',''];
         this.handleScroll();
 
         // Create blueimp galleries from dataset
@@ -35,9 +33,17 @@ export class GalleryLoader {
 
     handleScroll()
     {
-        if( ! this.inserted /*&& isElementInViewport(this.galleries_container)*/)
+        if( ! this.inserted )
         {
-            this.inserted = true;
+            document.querySelectorAll('.gallery').forEach(item => {
+                if( isElementInViewport(item)){
+                    this.inserted = true;
+                    return;
+                }
+            });
+
+            if( ! this.inserted )
+                return;
 
             let script_element = document.createElement('script');
             script_element.type = 'text/javascript';
